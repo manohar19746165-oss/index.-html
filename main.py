@@ -12,4 +12,25 @@ def read_root():
 # Example:
 # from dukan.routes import router as dukan_router
 # app.include_router(dukan_router, prefix="/dukan", tags=["Dukan"])
+from fastapi import FastAPI
+
+app = FastAPI(title="Kesari Project Suite", version="1.0")
+
+
+@app.get("/")
+def read_root():
+  return {"message": "Welcome to Kesari Project Suite (Dukan, Pump, Society, Bank)"}
+
+
+# Yahan aap apne alag-alag modules ke routers include kar sakte hain
+# Example:
+# from dukan.routes import router as dukan_router
+# app.include_router(dukan_router, prefix="/dukan", tags=["Dukan"])
+    <script>
+        document.getElementById('myButton').addEventListener('click', function() {
+            alert('बटन पर क्लिक किया गया!');
+        });
+    </script>
+</body>
+</html>
 
